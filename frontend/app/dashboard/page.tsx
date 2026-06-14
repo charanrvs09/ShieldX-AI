@@ -14,7 +14,7 @@ export default function DashboardPage() {
   const [history, setHistory] = useState<Scan[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/history")
+    fetch("https://shieldx-ai.onrender.com/history")
       .then((response) => response.json())
       .then((data) => {
         setHistory(data.reverse());

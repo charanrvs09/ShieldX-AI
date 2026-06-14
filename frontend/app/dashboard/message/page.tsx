@@ -15,7 +15,7 @@ export default function MessageScannerPage() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/analyze-text",
+        "https://shieldx-ai.onrender.com/analyze-text",
         {
           method: "POST",
           headers: {

@@ -15,7 +15,7 @@ export default function UrlScannerPage() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/analyze-url",
+        "https://shieldx-ai.onrender.com/analyze-url",
         {
           method: "POST",
           headers: {

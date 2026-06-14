@@ -30,7 +30,7 @@ export default function AnalyticsPage() {
     const fetchHistory = async () => {
       try {
         const response = await fetch(
-          "http://127.0.0.1:8000/history"
+          "https://shieldx-ai.onrender.com/history"
         );
 
         const data = await response.json();
