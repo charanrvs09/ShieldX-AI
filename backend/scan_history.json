@@ -1,0 +1,44 @@
+[
+  {
+    "type": "Message",
+    "prediction": "Scam",
+    "risk": 100,
+    "time": "2026-06-14 18:12:29"
+  },
+  {
+    "type": "URL",
+    "prediction": "Suspicious URL",
+    "risk": 80,
+    "time": "2026-06-14 18:12:43"
+  },
+  {
+    "type": "Screenshot",
+    "prediction": "Scam Screenshot",
+    "risk": 100,
+    "time": "2026-06-14 18:12:55"
+  },
+  {
+    "type": "Message",
+    "prediction": "Scam",
+    "risk": 100,
+    "time": "2026-06-14 18:25:11"
+  },
+  {
+    "type": "Message",
+    "prediction": "Scam",
+    "risk": 100,
+    "time": "2026-06-14 18:27:46"
+  },
+  {
+    "type": "URL",
+    "prediction": "Suspicious URL",
+    "risk": 100,
+    "time": "2026-06-14 18:33:10"
+  },
+  {
+    "type": "Screenshot",
+    "prediction": "Scam Screenshot",
+    "risk": 100,
+    "time": "2026-06-14 18:35:01"
+  }
+]

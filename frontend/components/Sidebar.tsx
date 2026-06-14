@@ -2,12 +2,26 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Sidebar() {
   const router = useRouter();
 
+  useEffect(() => {
+    const user = localStorage.getItem(
+      "shieldx-user"
+    );
+
+    if (!user) {
+      router.push("/login");
+    }
+  }, [router]);
+
   const logout = () => {
-    localStorage.removeItem("shieldx_logged_in");
+    localStorage.removeItem(
+      "shieldx-user"
+    );
+
     router.push("/login");
   };
 

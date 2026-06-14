@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -9,11 +9,28 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    if (email && password) {
-      localStorage.setItem("shieldx-user", email);
+  useEffect(() => {
+    const user = localStorage.getItem(
+      "shieldx-user"
+    );
+
+    if (user) {
       router.push("/dashboard");
     }
+  }, [router]);
+
+  const handleLogin = () => {
+    if (!email || !password) {
+      alert("Enter email and password");
+      return;
+    }
+
+    localStorage.setItem(
+      "shieldx-user",
+      email
+    );
+
+    router.push("/dashboard");
   };
 
   return (
